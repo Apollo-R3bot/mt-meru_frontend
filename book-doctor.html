@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="assets/css/bs_stepper.css" />
+  <title>Booking</title>
+  <style>
+
+  </style>
+</head>
+
+<body class="border shadow mb-0 bg-body rounded">
+  <header class="sticky-top bg-white">
+    <div class="menu shadow">
+      <nav class="navbar navbar-light w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand">MRRH</a>
+          <div class="d-flex">
+            <a href="booking.html" class="btn text-primary text-capitalize fw-bold">Home</a>
+            <a href="#" class="btn btn-outline-primary text-capitalize fw-bold">Login</a>
+            <div class="dropdown">
+              <a class="btn dropdown-toggle text-capitalize" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dr Apollo Snow
+              </a>
+              <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                <li class="text-center w-100">My Profile</li>
+                <hr>
+                <li class="text-center w-100"><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <div class="row" style="background-image: url('assets/images/backg.jpg');background-position: center;background-size: cover;">
+        <!-- Book a Doctor -->
+        <div class="modal-dialog modal-dialog-scrollable shadow-lg modal-xl">
+          <div class="modal-content">
+            <div class="modal-header text-white" style="background: #2981B3;">
+              <h5 class="modal-title">Booking Appointment</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="stepper" id="stepper">
+                <div class="steps-container">
+                  <div class="steps">
+                    <div class="step text-primary" id="1">
+                      <div class="step-title">
+                        <span class="step-number">01</span>
+                        <div class="step-text">Select Doctor</div>
+                      </div>
+                    </div>
+                    <div class="step text-primary" icon="fa fa-info-circle" id="2">
+                      <div class="step-title">
+                        <span class="step-number">02</span>
+                        <div class="step-text">Select day</div>
+                      </div>
+                    </div>
+                    <div class="step text-primary" icon="fa fa-book-reader" id="3">
+                      <div class="step-title">
+                        <span class="step-number">03</span>
+                        <div class="step-text">Phone Number</div>
+                      </div>
+                    </div>
+                    <div class="step text-primary" icon="fa fa-check" id="4">
+                      <div class="step-title">
+                        <span class="step-number">04</span>
+                        <div class="step-text">Phone Verification</div>
+                      </div>
+                    </div>
+                    <div class="step text-primary" icon="fa fa-check" id="5">
+                      <div class="step-title">
+                        <span class="step-number">05</span>
+                        <div class="step-text">Particulars</div>
+                      </div>
+                    </div>
+                    <div class="step text-primary" icon="fa fa-check" id="6">
+                      <div class="step-title">
+                        <span class="step-number">06</span>
+                        <div class="step-text">Confirmation</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="stepper-content-container border rounded mt-3">
+                  <form action="" method="post" class="w-100">
+                    <!-- Select Doctor -->
+                    <div class="stepper-content fade-in" stepper-label="1">
+                      <h5 class="text-center">Choose a Doctor</h5>
+                      <div class="row d-flex justify-content-around my-2">
+                        <table class="table table-stripped table-hover">
+                          <thead>
+                            <tr><td>Dictor Name</td><td>Action</td></tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>
+                                <!-- <div class="col"> -->
+                                  <h3 class="text-dark">Dr. John Smith
+                                  <p class="my-2">Paediatric Orthopedic | <span class="text-primary">6 Years Experience</span></p>
+                                  <p class="text-muted"><i class='bx bx-certification'></i> MBBS, MD (Radiotherapy), DNB (Radiotherapy), Med. Onco., FUICC, FNDM, FUICC</p>   
+                                  
+                                  <p class="text-start">
+                                      <a href="#" class="btn btn-outline-default shadow-none text-start" data-bs-toggle="collapse" data-bs-target="#staff2" aria-expanded="false" aria-controls="staff2">
+                                      About Dr. John Smith
+                                      </a>
+                                  </p>
+                                  <div class="collapse" id="staff2">
+                                      <ul>
+                                      <li class=" text-muted fw-normal">Dr. John Doe is a Radiation Specialist Oncologist with 30 Years of Experience. He is affiliated with Mt. Meru Refferal Regional Hospital in Arusha. Dr. John Doe holds MBBS, MD (Radiotherapy), DNB (Radiotherapy), Med. Onco., FUICC, FNDM, FUICC. He can treat a wide range of Radiation Oncology conditions like Bladder Cancer, Brain Tumor, Chondrosarcoma, Colon Cancer, Esophageal Cancer, and more . He speaks English, Hindi, Telugu, Hindi, Telugu.</li>
+                                      <li class=" text-muted fw-normal">Dr. John Doe has over 30 years of experience as a Radiation Specialist Oncologist at Mt. Meru Refferal Regional Hospital.</li>
+                                      </ul>
+                                  </div>
+                                <!-- </div> -->
+                              </td>
+                              <td><input type="radio" name="clinic" id="clinic_1" class="btn-check" value="dental">
+                                <label for="clinic_1"
+                                  class="rounded text-center p-2 shadow btn btn-outline-primary"
+                                  style="border: 2px dotted #2981B3">
+                                  Select
+                                </label></td>
+                            </tr>
+
+                            <tr>
+                              <td>
+                                <!-- <div class="col"> -->
+                                  <h3 class="text-dark">Dr. John Smith
+                                  <p class="my-2">Paediatric Orthopedic | <span class="text-primary">6 Years Experience</span></p>
+                                  <p class="text-muted"><i class='bx bx-certification'></i> MBBS, MD (Radiotherapy), DNB (Radiotherapy), Med. Onco., FUICC, FNDM, FUICC</p>   
+                                  
+                                  <p class="text-start">
+                                      <a href="#" class="btn btn-outline-default shadow-none text-start" data-bs-toggle="collapse" data-bs-target="#staff2" aria-expanded="false" aria-controls="staff2">
+                                      About Dr. John Smith
+                                      </a>
+                                  </p>
+                                  <div class="collapse" id="staff2">
+                                      <ul>
+                                      <li class=" text-muted fw-normal">Dr. John Doe is a Radiation Specialist Oncologist with 30 Years of Experience. He is affiliated with Mt. Meru Refferal Regional Hospital in Arusha. Dr. John Doe holds MBBS, MD (Radiotherapy), DNB (Radiotherapy), Med. Onco., FUICC, FNDM, FUICC. He can treat a wide range of Radiation Oncology conditions like Bladder Cancer, Brain Tumor, Chondrosarcoma, Colon Cancer, Esophageal Cancer, and more . He speaks English, Hindi, Telugu, Hindi, Telugu.</li>
+                                      <li class=" text-muted fw-normal">Dr. John Doe has over 30 years of experience as a Radiation Specialist Oncologist at Mt. Meru Refferal Regional Hospital.</li>
+                                      </ul>
+                                  </div>
+                                <!-- </div> -->
+                              </td>
+                              <td><input type="radio" name="clinic" id="clinic_2" class="btn-check" value="dental">
+                                <label for="clinic_2"
+                                  class="rounded text-center p-2 shadow btn btn-outline-primary"
+                                  style="border: 2px dotted #2981B3">
+                                  Select
+                                </label></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <button class="btn btn-outline-primary float-end rounded my-3" type="button"
+                        onclick="stepper.navigate('2')">
+                        <i class="bx bxs-right-arrow-alt"></i>Next</button>
+                    </div>
+
+                    <!-- Select Day -->
+                    <div class="stepper-content fade-in" stepper-label="2">
+                      <h5 class="text-center">Choose day</h5>
+                      <div class="row d-flex justify-content-around my-2">
+                        <input type="radio" name="day" id="day_1" class="btn-check" value="dental">
+                        <label for="day_1"
+                          class="col-md-2 fs-1 fw-bolder rounded text-center p-3 m-1 shadow btn btn-outline-secondary"
+                          style="border: 2px dotted #2981B3">
+                          5 <p>SEP, THU</p>
+                        </label>
+                        <input type="radio" name="day" id="day_2" class="btn-check" value="dental">
+                        <label for="day_2"
+                          class="col-md-2 fs-1 fw-bolder rounded text-center p-3 m-1 shadow btn btn-outline-secondary"
+                          style="border: 2px dotted #2981B3">
+                          6 <p>SEP, FRI</p>
+                        </label>
+                        <input type="radio" name="day" id="day_3" class="btn-check" value="dental">
+                        <label for="day_3"
+                          class="col-md-2 fs-1 fw-bolder rounded text-center p-3 m-1 shadow btn btn-outline-secondary"
+                          style="border: 2px dotted #2981B3">
+                          8 <p>SEP, THU</p>
+                        </label>
+                        <input type="radio" name="day" id="day_4" class="btn-check" value="dental">
+                        <label for="day_4"
+                          class="col-md-2 fs-1 fw-bolder rounded text-center p-3 m-1 shadow btn btn-outline-secondary"
+                          style="border: 2px dotted #2981B3">
+                          10 <p>SEP, THU</p>
+                        </label>
+                        <input type="radio" name="day" id="day_5" class="btn-check" value="dental">
+                        <label for="day_5"
+                          class="col-md-2 fs-1 fw-bolder rounded text-center p-3 m-1 shadow btn btn-outline-secondary"
+                          style="border: 2px dotted #2981B3">
+                          11 <p>SEP, THU</p>
+                        </label>
+                      </div>
+                      <button class="btn btn-outline-primary my-3 float-start" type="button"
+                        onclick="stepper.navigate('1')">Previous</button>
+                      <button class="btn btn-outline-primary my-3 float-end" type="button"
+                        onclick="stepper.navigate('3')">Next</button>
+                    </div>
+
+                    <!-- Personal Info -->
+                    <div class="stepper-content fade-in" stepper-label="3">
+                      <h5 class="text-center">Please fill personal details</h5>
+                      <div class="row my-0">
+                        <div class="col-md-6 my-2">
+                          <label for="fname">Firstname: <span class="text-danger">*</span></label>
+                          <input type="text" name="fname" id="fname" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 my-2">
+                          <label for="mname">Middle name:</label>
+                          <input type="text" name="mname" id="mname" class="form-control">
+                        </div>
+                        <div class="col-md-6 my-2">
+                          <label for="lname">Surname: <span class="text-danger">*</span></label>
+                          <input type="text" name="lname" id="lname" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 my-2">
+                          <label for="sex">Gender: <span class="text-danger">*</span></label>
+                          <select name="sex" id="sex" class="form-select">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                        </div>
+                        <div class="col-md-6 my-2">
+                          <label for="phone">Phone No: <span class="text-danger">*</span></label>
+                          <input type="text" name="phone" id="phone" class="form-control" required>
+                        </div>
+                        <div class="col-md-6 mt-2">
+                          <label for="address">Address: <span class="text-danger">*</span></label>
+                          <input type="text" name="address" id="address" class="form-control"
+                            placeholder="eg. Majengo, Arusha" required>
+                        </div>
+                        <input type="hidden" name="hidden">
+                      </div>
+                      <button class="btn btn-outline-primary my-3 float-start" type="button"
+                        onclick="stepper.navigate('2')">Previous</button>
+                      <button class="btn btn-outline-primary my-3 float-end" type="button"
+                        onclick="stepper.navigate('4')">Next</button>
+                    </div>
+
+                    <!-- Phone verification -->
+                    <div class="stepper-content fade-in" stepper-label="4">
+                      <div class="row my-0 p-3 d-flex justify-content-center ">
+                        <p class="text-center text-success" role="alert">Token ID sent to sms and email, please use to
+                          verify your
+                          phone number</p>
+                        <div class="col-md-5 my-2 d-flex flex-wrap justify-content-center">
+                          <input type="text" name="token" id="token" class="form-control w-100"
+                            placeholder="Enter Token ID">
+                          <input type="submit" value="Verify" class="btn btn-primary rounded my-3">
+                        </div>
+                      </div>
+                      <button class="btn btn-outline-primary my-3 float-start" type="button"
+                        onclick="stepper.navigate('3')">Previous</button>
+                      <button class="btn btn-outline-primary my-3 float-end" type="button"
+                        onclick="stepper.navigate('5')">Next</button>
+                    </div>
+
+                    <!-- Confirmation -->
+                    <div class="stepper-content fade-in" stepper-label="5">
+                      <div class="row my-0 p-3">
+                        <div class="col-md-6 my-2">
+                          <div class="card">
+                            <div class="card-header text-center">Clinic Schedule</div>
+                            <div class="card-body">
+                              <p class="fw-bold">Clinic: <span class="fw-normal">MED GENERAL-WEEKENDS/HOLIDAY</span>
+                              </p>
+                              <p class="fw-bold">Clinic: <span class="fw-normal">MED GENERAL-WEEKENDS/HOLIDAY</span>
+                              </p>
+                              <p class="fw-bold">Schedule Date: <span class="fw-normal">Friday, September 6,
+                                  2024</span></p>
+                              <p class="fw-bold">Time: <span class="fw-normal">09:00AM - 12:00 PM</span></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-6 my-2">
+                          <div class="card">
+                            <div class="card-header text-center">Personal Information</div>
+                            <div class="card-body">
+                              <p class="fw-bold">Fullname: <span class="fw-normal">JOHN DOE</span></p>
+                              <p class="fw-bold">Sex: <span class="fw-normal">Male</span></p>
+                              <p class="fw-bold">Mobile: <span class="fw-normal">0700000000</span></p>
+                              <p class="fw-bold">Email address: <span class="fw-normal">email@example.com</span></p>
+                              <p class="fw-bold">Address: <span class="fw-normal">Majengo Juu, Arusha</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="btn btn-outline-primary my-3 float-start" type="button"
+                        onclick="stepper.navigate('4')">Previous</button>
+                      <button class="btn btn-outline-primary my-3 float-end" data-bs-target="#successMsg"
+                        data-bs-toggle="modal" data-bs-dismiss="modal">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="modal fade" id="successMsg" tabindex="-1" aria-labelledby="successMsgLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header text-white" style="background: #2981B3;">
+                <h5 class="modal-title">Message</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="alert alert-success text-center">Appointment request submitted successfully, you will be
+                  notified with the approval notice via sms or email address. Thank you!</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                <button type="button" class="btn btn-primary">Yes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-4">
+    <div class="top py-3">
+      <div class="row m-0 px-4 py-2">
+        <div class="col-md-3 text-center">
+          <h4 class="text-center text-white mb-2">Map</h4>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.935269919377!2d36.69213557407986!3d-3.3659991414341404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371c8028b8ecad%3A0xddc916a89246d8ad!2sMount%20Meru%20Regional%20Referral%20Hospital!5e0!3m2!1sen!2stz!4v1723620861007!5m2!1sen!2stz"
+            style="max-width: 100%;height: auto;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-3 bg-none">
+          <h4 class="text-center text-white">Quicklinks</h4>
+          <ul class="list-group">
+            <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                class='bx bx-link text-light me-2'> </i> <a href="www.nhif.go.tz" target="_blank">Bima
+                ya Afya</a></li>
+            <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                class='bx bx-link text-light me-2'> </i> <a href="https://www.moh.go.tz/" target="_blank">Wizara ya
+                Afya</a></li>
+            <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                class='bx bx-link text-light me-2'> </i> <a href="http://www.tamisemi.go.tz/" target="_blank">Ofisi ya
+                Rais - TAMISEMI</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-white">Address</h4>
+          <ul class="list-group">
+            <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                class='bx bxs-location-plus me-2 text-light'> </i> Arusha</li>
+            <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                class='bx bx bx-envelope me-2 text-light'> </i>P.O.Box 3092, Arusha</li>
+            <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                class='bx bx-phone-call me-2 text-light'> </i> 250-335751-2</li>
+            <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                class='bx bx-envelope me-2 text-light'> </i> mt.merurrh@afya.go.tz</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4 class="text-center text-white">CME</h4>
+          <video class="w-100" autoplay loop muted>
+            <source src="../../../../Laravel From Scratch 2022 4+ Hour Course.mp4" type="video/mp4"
+              class="object-fit-cover" />
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <div class="mini d-flex justify-content-center align-items-center text-white border-0">
+      <p class="text-light p-0" style="font-size: 14px;">Copyright ©2023 Mount Meru Regional Referal . All rights
+        reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
+
+  <script>
+    const stepperElement = document.querySelector("#stepper");
+    const stepper = new CDB.Stepper(stepperElement);
+  </script>
+</body>
+
+</html>

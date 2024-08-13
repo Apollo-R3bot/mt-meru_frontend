@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/ico" href="assets/images/logo_mt_meru.png">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="assets/js/javascript.js"></script>
+    <style>
+        
+        .profile-pic {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .profile-pic img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<!-- HEADER -->
+<header class="sticky-top bg-white">
+    <div class="menu shadow">
+      <nav class="navbar navbar-light w-100">
+        <div class="container-fluid">
+          <a class="navbar-brand">MRRH</a>
+          <div class="d-flex">
+            <a href="booking.html" class="btn text-capitalize fw-bold shadow-none">Home</a>
+            <a href="#" class="btn text-capitalize fw-bold shadow-none" data-bs-toggle="modal"
+              data-bs-target="#tracker">My appointment</a>
+            <a href="#" class="btn btn-outline-primary text-capitalize fw-bold shadow-none">Login</a>
+            <div class="dropdown">
+              <a class="btn dropdown-toggle text-capitalize shadow-none" href="#" role="button" id="dropdownMenuLink"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Dr Apollo Snow
+              </a>
+              <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                <li class="text-center w-100">My Profile</li>
+                <hr>
+                <li class="text-center w-100"><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class=" row accordion shadow" id="accordionExample">
+            <!-- Nav bar -->
+            <div class="col-md-3 border-end">
+                <div class="profile-pic">
+                    <img src="../assets/images/samia.webp" class="m-2" alt="Profile Picture">
+                    <!-- <h4 class="mt-2">John Doe</h4>
+                    <p>Student</p> -->
+                </div>
+                <button class="accordion-button border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#profile" aria-expanded="true"
+                    aria-controls="profile">
+                    <i class='bx bxs-dashboard me-2 fs-3'></i>
+                    My Profile
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#Studentdetails" aria-expanded="false"
+                    aria-controls="Dashboard">
+                    <i class='bx bx-book-reader me-2 fs-3'></i>
+                    Field Student
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#Institutedetails" aria-expanded="false"
+                    aria-controls="Dashboard">
+                    <i class='bx bxs-institution me-2 fs-3'></i>
+                    Institute details
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#details" aria-expanded="false" aria-controls="details">
+                    <i class='bx bx-user me-2 fs-3'></i>
+                    Personal details
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#education" aria-expanded="false"
+                    aria-controls="education">
+                    <i class='bx bx-book me-2 fs-3'></i>
+                    Academic Qualification
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#exprience" aria-expanded="false"
+                    aria-controls="exprience">
+                    <i class='bx bx-briefcase me-2 fs-3'></i>
+                    Exprience
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#attachment" aria-expanded="false"
+                    aria-controls="attachment">
+                    <i class='bx bxs-file-pdf me-2 fs-3'></i>
+                    Attachments
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#application" aria-expanded="false"
+                    aria-controls="application">
+                    <i class='bx bx-folder-open me-2 fs-3'></i>
+                    My Application
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#settings" aria-expanded="false" aria-controls="settings">
+                    <i class='bx bx-cog me-2 fs-3' ></i>
+                    Settings
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#logout" aria-expanded="false" aria-controls="logout">
+                    <i class='bx bx-log-out me-2 fs-3'></i>
+                    Logout
+                </button>
+
+            </div>
+
+            <!-- Content(Pages) -->
+            <div class="col-md-9 p-0">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid ">
+                        <a class="navbar-brand" href="#"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div id="profile" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row d-flex justify-content-center d-inline gap-2">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="card rounded-0 border">
+                                        <div class="card-header">Select category</div>
+                                        <div class="card-body">
+                                            <input type="radio" name="cat" id="student" class="btn-check" value="dental">
+                                            <label for="student"
+                                                class="col-md-3 rounded text-center p-2 shadow btn btn-outline-primary"
+                                                style="border: 2px dotted #2981B3">
+                                                As student
+                                            </label>
+                                            <input type="radio" name="cat" id="student" class="btn-check" value="dental">
+                                            <label for="student"
+                                                class="col-md-3 rounded text-center p-2 shadow btn btn-outline-primary"
+                                                style="border: 2px dotted #2981B3">
+                                                Institute
+                                            </label>
+                                            <input type="radio" name="cat" id="student" class="btn-check" value="dental">
+                                            <label for="student"
+                                                class="col-md-3 rounded text-center p-2 shadow btn btn-outline-primary"
+                                                style="border: 2px dotted #2981B3">
+                                                Volunteer / Contract
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <div class="col-md-12">
+                                    <p>Receipt of online applications will be confirmed via the email address or mobile
+                                        phone number you have provided.</p>
+                                    <p>Click on the <b><i>Review CV</b></i> menu bar to review your CV before submission
+                                        and verify that your email address is correct.<br>
+                                        If you are experiencing additional problems, please give us a feedback <b><a
+                                                class="btn-link" href="#">here</a></b>.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="row my-2">
+                                <h2>Browse talent by category</h2>
+                                <div class="col-md-3 my-2">
+                                    <a href="#" class="card p-2 shadow">
+                                        <h3><i class="bx bx-desktop me-2"></i>Development & IT</h3>
+                                        <p class="text-muted"><i class="bx bx-user me-2"></i>20 Posts</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 my-2">
+                                    <a href="#" class="card p-2 shadow">
+                                        <h3><i class="bx bx-line-chart me-2"></i>Sales & Marketing</h3>
+                                        <p class="text-muted"><i class="bx bx-user me-2"></i>3 Posts</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 my-2">
+                                    <a href="#" class="card p-2 shadow">
+                                        <h3><i class="bx bx-bank me-2"></i>Finance & Accounting</h3>
+                                        <p class="text-muted"><i class="bx bx-user me-2"></i>20 Posts</p>
+                                    </a>
+                                </div>
+                                <div class="col-md-3 my-2">
+                                    <a href="#" class="card p-2 shadow">
+                                        <h3><i class="bx bx-first-aid me-2"></i> Health & Medicine</h3>
+                                        <p class="text-muted"><i class="bx bx-user me-2"></i>5 Posts</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="details" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Personal details</h2>
+                        <form class="m-4 p-2">
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>University/Institute/College</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Full Name</label>
+                            </div>
+
+
+                            <div class="user-box">
+                                <label></label>
+                                <select class="form__field">
+                                    <strong>
+                                        <option value="1">Gender</option>
+                                    </strong>
+                                    <option value="2"> <a class="text-light" href="login.html">Male</a></option>
+                                    <option value="2"> <a class="text-light" href="register.html">female</a></option>
+                                </select>
+                            </div>
+
+                            <div class="user-box mt-4">
+                                <input type="text" name="" required="">
+                                <label>Programme</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Year of study</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>National Identity card (NIDA)</label>
+                            </div>
+                            <button class="btn btn-primary float-end">Save</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="Studentdetails" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Personal details</h2>
+                        <form class="m-4 p-2">
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>University/Institute/College</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Full Name</label>
+                            </div>
+                            <div class="user-box">
+                                <label></label>
+                                <select class="form__field">
+                                    <strong>
+                                        <option value="1">Gender</option>
+                                    </strong>
+                                    <option value="2"> <a class="text-light" href="login.html">Male</a></option>
+                                    <option value="2"> <a class="text-light" href="register.html">female</a></option>
+                                </select>
+                            </div>
+
+                            <div class="user-box mt-4">
+                                <input type="text" name="" required="">
+                                <label>Programme</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Year of study</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>National Identity card (NIDA)</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="file" name="" required="" placeholder="Upload your field application letter">
+                                <!-- <label>National Identity card (NIDA)</label> -->
+                            </div>
+                    <button class="btn btn-primary float-end">Save</button>
+                    </form>
+                </div>
+               </div>
+                <div id="Institutedetails" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Institue details</h2>
+                        <form class="m-4 p-2">
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Institute Name</label>
+                            </div>
+
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Institute Address</label>
+                            </div>
+
+                            <div class="user-box mt-4">
+                                <input type="file" name="" required="">
+                                <label>Upload Letter</label>
+                            </div>
+                            <button class="btn btn-primary float-end">Save</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="application" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>My Application</h2>
+                        <table class="table table-stripped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Application Status</th>
+                                    <th>Job Applied</th>
+                                    <th>Date Submitted</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Recieved</td>
+                                    <td> INFORMATION COMMUNICATION TECHNOLOGY OFFICER II (PROGRAMMING)</td>
+                                    <td>2024-09-01</td>
+                                    <td><button class="btn btn-sm btn-primary">View</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Received</td>
+                                    <td> INFORMATION COMMUNICATION TECHNOLOGY OFFICER II (PROGRAMMING)</td>
+                                    <td>2024-08-25</td>
+                                    <td><button class="btn btn-sm btn-primary">View</button></td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="exprience" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Work Exprience</h2>
+                        <i class="bx bx-plus-circle plus-circle p-2 float-end" data-bs-toggle="collapse"
+                            data-bs-target="#experienceModal" style="font-size: 30px; color: var(--primary);"></i>
+
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Organization/Institution</th>
+                                    <th>Position</th>
+                                    <th>From</th>
+                                    <th>To</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>MtMeru Hospital</td>
+                                    <td> INFORMATION COMMUNICATION TECHNOLOGY OFFICER II (PROGRAMMING)</td>
+                                    <td>2024-09-01</td>
+                                    <td>2024-09-01</td>
+                                    <td class="d-flex justify-content-center">
+                                        <button class="btn btn-sm btn-success">edit</button>
+                                        <button class="btn btn-sm btn-danger mx-2">delete</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>MtMeru Hospital</td>
+                                    <td> INFORMATION COMMUNICATION TECHNOLOGY OFFICER II (PROGRAMMING)</td>
+                                    <td>2024-08-25</td>
+                                    <td>2024-08-25</td>
+                                    <td class="d-flex justify-content-center">
+                                        <button class="btn btn-sm btn-success">edit</button>
+                                        <button class="btn btn-sm btn-danger mx-2">delete</button>
+                                    </td>
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="education" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Education Qualification</h2>
+                        <form class="m-4 p-2">
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Education Level</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Programme Category</label>
+                            </div>
+
+
+                            <div class="user-box">
+                                <label></label>
+                                <select class="form__field">
+                                    <strong>
+                                        <option value="1">Country</option>
+                                    </strong>
+                                    <option value="2"> <a class="text-light" href="login.html">Tanazania</a></option>
+                                    <option value="2"> <a class="text-light" href="register.html">Kenya</a></option>
+                                    <option value="2"> <a class="text-light" href="register.html">Uganda</a></option>
+                                    <option value="2"> <a class="text-light" href="register.html">Burundi</a></option>
+                                    <option value="2"> <a class="text-light" href="register.html">Rwanda</a></option>
+                                    <option value="2"> <a class="text-light" href="register.html">DRC CONGO</a></option>
+                                </select>
+                            </div>
+
+                            <div class="user-box mt-4">
+                                <input type="text" name="" required="">
+                                <label>Programme Name </label>
+                            </div>
+                            <div class="user-box">
+                                <input type="text" name="" required="">
+                                <label>Institution Name</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="date" name="" required="">
+                                <label>Date From</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="date" name="" required="">
+                                <label>To</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="file" name="" required="">
+                                <label>Attach your certificate</label>
+                            </div>
+                            <button class="btn btn-primary float-end">Save</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="attachment" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h4>Please Attach your Application letter</h4>
+                        <i class="bx bx-plus-circle plus-circle p-2 float-end" data-bs-toggle="collapse"
+                            data-bs-target="#attachmentModal" style="font-size: 30px; color: var(--primary);"></i>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+
+                                    <th>Attachment</th>
+                                    <th>View</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+
+                                    <td>Recieved</td>
+                                    <td><button class="btn btn-sm btn-primary">View</button></td>
+                                    <td class="justify-content-center">
+                                        <button type="button" class="btn btn-sm btn-success">edit</button>
+                                        <button type="button" class="btn btn-sm btn-danger">delete</button>
+                                    </td>
+
+                                </tr>
+                                <tr>
+
+                                    <td>Received</td>
+                                    <td><button class="btn btn-sm btn-primary">View</button></td>
+                                    <td>
+                                        <button class="btn btn-sm btn-success">edit</button>
+                                        <button class="btn btn-sm btn-danger">delete</button>
+                                    </td>
+
+                                </tr>
+                                <!-- Add more rows as needed -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="settings" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>set your profile</h2>
+                        <form>
+                            <div class="user-box">
+                                <input type="password" name="" required="" id="changePassword"
+                                    placeholder="Enter new password">
+                                <label for="changePassword">Change Password</label>
+                            </div>
+                            <div class="user-box">
+                                <input type="password" name="" required="" id="confirmPassword"
+                                    placeholder="Confirm new password">
+                                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Update Settings</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="setting" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2></h2>
+                        <form>
+                            <!-- <div class="user-box">
+                            <input type="password" name="" required="" id="changePassword" placeholder="Enter new password">
+                            <label for="changePassword">Change Password</label>
+                            </div>
+                            <div class="user-box">
+                            <input type="password" name="" required="" id="confirmPassword" placeholder="Confirm new password">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            </div> -->
+                            <div class="mb-3">
+                                <p>Please attach your Appliation letter Here.</p>
+                                <label for="attachmentFile" class="form-label">Attach File</label>
+                                <input type="file" class="form-control" id="attachmentFile" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">confirm</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div id="job" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>My Application</h2>
+                        <table class="table table-stripped">
+                            <thead>
+                                <tr>
+                                    <th>Available job/position</th>
+                                    <th>Closing Date</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td> INFORMATION COMMUNICATION TECHNOLOGY OFFICER II (PROGRAMMING)</td>
+                                    <td>2024-09-20</td>
+                                    <td><button class="btn btn-sm btn-primary" data-bs-toggle="collapse"
+                                            data-bs-target="#setting" aria-expanded="false"
+                                            aria-controls="settings">Apply</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="attachmentModal" class="accordion-collapse collapse" aria-labelledby="attachmentModalLabel"
+                    data-bs-parent="#accordionExample">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="attachmentModalLabel">Select Attachment Type</h5>
+                            </div>
+                            <div class="modal-body">
+                                <form id="attachmentForm">
+                                    <!-- Select Attachment Type -->
+                                    <div class="mb-3">
+                                        <label for="attachmentType" class="form-label">Attachment Type</label>
+                                        <select class="form-select" id="attachmentType" required>
+                                            <option value="" disabled selected>Select attachment type</option>
+                                            <option value="application_letter">Application Letter</option>
+                                            <option value="birth_certificate">Birth Certificate</option>
+                                            <option value="cv">Curriculum Vitae</option>
+                                        </select>
+                                    </div>
+                                    <!-- File Input -->
+                                    <div class="mb-3">
+                                        <label for="attachmentFile" class="form-label">Attach File</label>
+                                        <input type="file" class="form-control" id="attachmentFile" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary" form="attachmentForm">Attach File</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="experienceModal" class="accordion-collapse collapse" aria-labelledby="exprienceModalLabel"
+                    data-bs-parent="#accordionExample">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="attachmentModalLabel">Work Exprience</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h3></h3>
+                                <form class="m-4 p-2">
+                                    <div class="user-box">
+                                        <input type="text" name="" required="">
+                                        <label>University/Institute/College</label>
+                                    </div>
+                                    <div class="user-box">
+                                        <input type="text" name="" required="">
+                                        <label>Institution Address</label>
+                                    </div>
+                                    <div class="user-box">
+                                        <input type="text" name="" required="">
+                                        <label>Job Title</label>
+                                    </div>
+                                    <div class="user-box">
+
+                                        <div class="user-box">
+                                            <input type="date" name="" required="">
+                                            <label>From</label>
+                                        </div>
+                                        <div class="user-box">
+                                            <input type="date" name="" required="">
+                                            <label>To</label>
+                                        </div>
+                                        <!-- <div class="user-box">
+                                            <label></label>
+                                            <select class="form__field">
+                                                <strong>
+                                                    <option value="1">Gender</option>
+                                                </strong>
+                                                <option value="2"> <a class="text-light" href="login.html">Male</a></option>
+                                                <option value="2"> <a class="text-light" href="register.html">female</a></option>
+                                            </select>
+                                        </div>
+            
+                                        <div class="user-box mt-4">
+                                            <input type="text" name="" required="">
+                                            <label>Programme</label>
+                                        </div>
+                                        <div class="user-box">
+                                            <input type="text" name="" required="">
+                                            <label>Year of study</label>
+                                        </div>
+                                        <div class="user-box">
+                                            <input type="text" name="" required="">
+                                            <label>National Identity card (NIDA)</label>
+                                        </div> -->
+                                        <button class="btn btn-primary float-end">Save</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-4">
+        <div class="top py-3">
+            <div class="row m-0 px-4 py-2">
+                <div class="col-md-3 text-center">
+                    <h4 class="text-center text-white mb-2">Map</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.935269919377!2d36.69213557407986!3d-3.3659991414341404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371c8028b8ecad%3A0xddc916a89246d8ad!2sMount%20Meru%20Regional%20Referral%20Hospital!5e0!3m2!1sen!2stz!4v1723620861007!5m2!1sen!2stz"
+                        style="max-width: 100%;height: auto;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-3 bg-none">
+                    <h4 class="text-center text-white">Quicklinks</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-link text-light me-2'> </i> <a href="www.nhif.go.tz" target="_blank">Bima
+                                ya Afya</a></li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-link text-light me-2'> </i> <a href="https://www.moh.go.tz/"
+                                target="_blank">Wizara ya Afya</a></li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-link text-light me-2'> </i> <a href="http://www.tamisemi.go.tz/"
+                                target="_blank">Ofisi ya Rais - TAMISEMI</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center text-white">Address</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bxs-location-plus me-2 text-light'> </i> Arusha</li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx bx-envelope me-2 text-light'> </i>P.O.Box 3092, Arusha</li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-phone-call me-2 text-light'> </i> 250-335751-2</li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-envelope me-2 text-light'> </i> mt.merurrh@afya.go.tz</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center text-white">CME</h4>
+                    <video class="w-100" autoplay loop muted>
+                        <source src="../../../../Laravel From Scratch 2022 4+ Hour Course.mp4" type="video/mp4"
+                            class="object-fit-cover" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini d-flex justify-content-center align-items-center text-white border-0">
+            <p class="text-light p-0" style="font-size: 14px;">Copyright ©2023 Mount Meru Regional Referal . All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // sidebar
+        var menuIcon = document.getElementById("check");
+        menuIcon.addEventListener('change', function () {
+
+            var sideMenu = document.querySelector(".sidebar");
+            var title = document.querySelectorAll(".title");
+
+            if (menuIcon.checked) {
+                sideMenu.style.width = "280px";
+                sideMenu.style.transition = "0.5s";
+                sideMenu.style.transitionProperty = "left";
+                title.forEach(con => {
+                    con.style.display = "block";
+                });
+            } else {
+                title.forEach(con => {
+                    con.style.display = "none";
+                });
+                sideMenu.style.width = "75px";
+            }
+        });
+    </script>
+    <script>
+        // Show form based on selection
+        document.getElementById('formSelect').addEventListener('change', function () {
+            const selectedForm = this.value;
+            document.querySelectorAll('.form-container').forEach(form => {
+                form.style.display = 'none'; // Hide all forms
+            });
+            if (selectedForm) {
+                document.getElementById(selectedForm).style.display = 'block'; // Show selected form
+            }
+        });
+    </script>
+</body>
+
+</html>

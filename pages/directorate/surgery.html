@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="icon" type="image/ico" href="../../assets/images/logo_mt_meru.png">
+    <link rel="stylesheet" href="../../assets/bootstrap/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="../../assets/js/jquery-3.7.1.min.js"></script>
+    <script src="../../assets/js/javascript.js"></script>
+</head>
+
+<body class="border shadow mb-0 bg-body rounded">
+    <!-- HEADER -->
+    <header>
+        <div class="top">
+            <div class="social-media d-flex fs-4 justify-content-center align-items-center">
+                <i class='bx bxl-facebook-circle text-white me-2'></i>
+                <i class='bx bxl-twitter text-white me-2'></i>
+                <i class='bx bxl-instagram-alt text-white me-2'></i>
+                <i class='bx bxl-youtube text-white me-2'></i>
+            </div>
+            <nav class="navbar navbar-expand-lg p-0">
+                <div class="container-fluid p-0">
+                    <div class="collapse navbar-collapse" id="lang">
+                        <ul class="navbar-nav me-auto w-100">
+                            <li class="nav-item dropdown w-100">
+                                <a class="nav-link dropdown-toggle text-capitalize btn btn-primary px-3 py-1 mx-4 border-0 shadow-none text-start text-white"
+                                    href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Kiswahili
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item text-capitalize" href="#">Kiswahili</a></li>
+                                    <li><a class="dropdown-item text-capitalize" href="#">English</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="banner">
+            <div class="d-flex justify-content-between py-4 my-0">
+                <img src="../../assets/images/logo.jpeg" alt="">
+                <div class="content text-center">
+                    <h2 class="fw-bold text-dark">MINISTRY OF HEALTH</h2>
+                    <h2 class="fw-bold">MOUNT MERU REGIONAL REFERAL HOSPITAL</h2>
+                </div>
+                <img src="../../assets/images/logo_mt_meru.png" alt="">
+            </div>
+        </div>
+    </header>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg p-0">
+            <div class="container-fluid p-0">
+                <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bx bx-menu text-white fs-2"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto d-flex justify-content-between w-100">
+                        <li class="nav-item">
+                            <a class="nav-link active text-capitalize" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About us
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-capitalize text-start" href="#"><i
+                                            class='bx bxs-right-arrow'></i> History & background</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start"
+                                        href="pages/about/structure.html"><i class='bx bxs-right-arrow'></i>
+                                        Organization structure</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href="#"><i
+                                            class='bx bxs-right-arrow'></i> Mission & Vision</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href="#"><i
+                                            class='bx bxs-right-arrow'></i> Staffs</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start"
+                                        href="pages/directorate/surgery.html"><i class='bx bxs-right-arrow'></i>
+                                        Directorate</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href="#"><i
+                                            class='bx bxs-right-arrow'></i> Life at Hospital</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Ambulance services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Blood donation services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Catering service</a></li>
+                                <li class="nav-item dropend w-100">
+                                    <a class="nav-link dropdown-toggle text-capitalize text-start text-white" href="#"
+                                        id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class='bx bxs-right-arrow'></i> Diagnostic service
+                                    </a>
+                                    <ul class="dropdown-menu w-100 text-start" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item text-capitalize text-start m-0"
+                                                href="pages/services/lab.html"> <i class='bx bxs-right-arrow'></i>
+                                                Laboratory</a></li>
+                                        <li><a class="dropdown-item text-capitalize text-start m-0"
+                                                href="pages/services/lab.html"> <i class='bx bxs-right-arrow'></i>
+                                                Radiology</a></li>
+                                    </ul>
+                                </li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Emergency services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Endoscopy services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Fast Track services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Health insurance services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Inpatient services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Mortuary services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Outreach service</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Pharmaceutical services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Rehabilitation services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Social welfare services</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> Training service</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href=""><i
+                                            class='bx bxs-right-arrow'></i> VIP services</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="booking.html">Online Booking</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Research & Publication
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-capitalize text-start" href="#"><i
+                                            class='bx bxs-right-arrow'></i> Articles</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href="#"><i
+                                            class='bx bxs-right-arrow'></i> Reports</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href="#"><i
+                                            class='bx bxs-right-arrow'></i> Research</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href="#"><i
+                                            class='bx bxs-right-arrow'></i> Outreach</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href="#"><i
+                                            class='bx bxs-right-arrow'></i> Training</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#">Clinic & general outpatients</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-capitalize" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                News & Events
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-capitalize text-start" href="news.html"><i
+                                            class='bx bxs-right-arrow'></i>News</a></li>
+                                <li><a class="dropdown-item text-capitalize text-start" href="events.html"><i
+                                            class='bx bxs-right-arrow'></i>Events</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#">Public & relations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="#">Feedback</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-capitalize" href="gallery.html">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="row m-1 directorate">
+            <!-- SideBar Navigation -->
+            <div class="col-md-3 sidebar bg-white">
+                <div class="col">
+                    <input type="checkbox" id="check">
+                    <label class="btn btn-primary" for="check"><i class="bx bx-menu text-white fs-3"></i></label>
+                </div>
+                <div class="col border-bottom">
+                    <div class="title w-100">
+                        <a href="#adminHR" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle d-flex align-items-center"><i
+                                class='bx bxs-radiation fs-3 border rounded me-2'></i> Administration & HR</a>
+                        <div class="collapse" id="adminHR">
+                            <a href="general_department.html" class="ps-4">General surgery</a>
+                            <a href="#" class="ps-4">Department 2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col border-bottom">
+                    <div class="title w-100">
+                        <a href="#financeAccount" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle d-flex align-items-center"><i
+                                class='bx bxs-radiation fs-3 border rounded me-2'></i>Finance and Account</a>
+                        <div class="collapse" id="financeAccount">
+                            <a href="#" class="ps-4">Department 1</a>
+                            <a href="#" class="ps-4">Department 2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col border-bottom">
+                    <div class="title w-100">
+                        <a href="#internalAudit" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle d-flex align-items-center"><i
+                                class='bx bxs-radiation fs-3 border rounded me-2'></i>Internal Auditing</a>
+                        <div class="collapse" id="internalAudit">
+                            <a href="#" class="ps-4">Department 1</a>
+                            <a href="#" class="ps-4">Department 2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col border-bottom">
+                    <div class="title w-100">
+                        <a href="#healthServices" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle d-flex align-items-center"><i
+                                class='bx bxs-radiation fs-3 border rounded me-2'></i>Health Services Management</a>
+                        <div class="collapse" id="healthServices">
+                            <a href="#" class="ps-4">Department 1</a>
+                            <a href="#" class="ps-4">Department 2</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col border-bottom">
+                    <div class="title w-100">
+                        <a href="#planLegal" data-bs-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle d-flex align-items-center"><i
+                                class='bx bxs-radiation fs-3 border rounded me-2'></i>Plan and Legal Service</a>
+                        <div class="collapse" id="planLegal">
+                            <a href="#" class="ps-4">Department 1</a>
+                            <a href="#" class="ps-4">Department 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="col-md-9 my-2 float-end">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active tabs" aria-current="page" href="#collapseDescription">Description</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tabs" href="#collapseService">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tabs" href="#collapseStaff">Staff</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link tabs" href="#gallery">Gallery</a>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col m-2 p-1">
+                        <!-- Descriptions -->
+                        <div class="card card-body border-0 rounded-0" id="collapseDescription">
+                            <h3>GENERAL SURGERY DEPARTMENT.</h3>
+                            <p>Select a department from the sidebar to view more details.</p>
+                            <p>The Department of General Surgery is one of the surgical services department comprises of
+                                four units and these are General surgery, Urology, Orthopaedic, Theatre, Anesthesia and
+                                ICU. The Department is located in the surgical building.</p>
+                            <p>The Department of General Surgery is one of the surgical services department comprises of
+                                four units and these are General surgery, Urology, Orthopaedic, Theatre, Anesthesia and
+                                ICU. The Department is located in the surgical building.</p>
+                            <p>The Department of General Surgery is one of the surgical services department comprises of
+                                four units and these are General surgery, Urology, Orthopaedic, Theatre, Anesthesia and
+                                ICU. The Department is located in the surgical building.</p>
+                            <p>Urological elective surgeries performed both open and endoscopic includes Posterior
+                                ureltral valve, Hypospadias, Epispadias, Nephrectomy, Pyeloplasty, pyelolithotomy,
+                                Nephrolithotomy, Urethra stricture, Prostate Surgeries, penile surgeries, Urinary
+                                tractstones, Testicular/scrorl surgeries.</p>
+                        </div>
+
+                        <!-- Services -->
+                        <div class="card card-body border-0 rounded-0" id="collapseService">
+                            <h3 class="w-50 pb-2"
+                                style="border-bottom: 3px solid;border-image: linear-gradient(to right,  #2981B3 35%, transparent 35%) 100% 1;">
+                                Our Services</h3>
+                            <p>Our Health Centres are critical to the network we have established in Tanzania. By
+                                offering medical services within key community clusters across the country, we aim to
+                                make high-quality health care more accessible and equitable. Our Health Centres are
+                                linked digitally to one another and to our two leading hospitals to offer the people of
+                                Tanzania comprehensive and integrated health care services.</p>
+                            <div class="row">
+                                <div class="col-md-6 my-2">
+                                    <button
+                                        class="btn btn-default w-100 d-flex justify-content-center align-items-center fs-5 border box"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#testOne"
+                                        aria-expanded="false" aria-controls="testOne">
+                                        <i class='bx bxs-capsule mx-3'></i> Clinical Chemistry
+                                    </button>
+                                    <div class="collapse border border-top-0 w-100 m-0 p-3" id="testOne">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                        <ul>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-2">
+                                    <button
+                                        class="btn btn-default w-100 d-flex justify-content-center align-items-center fs-5 border box"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#testTwo"
+                                        aria-expanded="false" aria-controls="testTwo">
+                                        <i class='bx bxs-capsule mx-3'></i> Clinical Chemistry
+                                    </button>
+                                    <div class="collapse border border-top-0 w-100 m-0 p-3" id="testTwo">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                        <ul>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-2">
+                                    <button
+                                        class="btn btn-default w-100 d-flex justify-content-center align-items-center fs-5 border box"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#testThree"
+                                        aria-expanded="false" aria-controls="testThree">
+                                        <i class='bx bxs-capsule mx-3'></i> Clinical Chemistry
+                                    </button>
+                                    <div class="collapse border border-top-0 w-100 m-0 p-3" id="testThree">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                        <ul>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 my-2">
+                                    <button
+                                        class="btn btn-default w-100 d-flex justify-content-center align-items-center fs-5 border box"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#testFour"
+                                        aria-expanded="false" aria-controls="testFour">
+                                        <i class='bx bxs-capsule mx-3'></i> Clinical Chemistry
+                                    </button>
+                                    <div class="collapse border border-top-0 w-100 m-0 p-3" id="testFour">
+                                        Some placeholder content for the collapse component. This panel is hidden by
+                                        default but revealed when the user activates the relevant trigger.
+                                        <ul>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                            <li>Some placeholder content for the collapse component. </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Staffs -->
+                        <div class="card card-body border-0 rounded-0" id="collapseStaff">
+                            <h3 class="w-50 py-2"
+                                style="border-bottom: 3px solid;border-image: linear-gradient(to right,  #2981B3 30%, transparent 30%) 100% 1;">
+                                Our Staff Team</h3>
+                            <p>Scroll below to see a list of individual staff members
+                                that make up the NICCY team, or you can also use the drop down menu to view different
+                                teams</p>
+                            <div class="row my-2 p-2">
+                                <!-- Search -->
+                                <table id="staffs" class="table table-borderless" style="width:100%">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="card my-3">
+                                                    <div class="row">
+                                                        <div class="col-md-2 my-2 text-center">
+                                                            <img class="profile" src="assets/images/logo.png" alt=""
+                                                                style="max-width: 100%;">
+                                                        </div>
+                                                        <div class="col-md-7 my-2">
+                                                            <h3 class="text-dark">Dr. John Doe
+                                                                <p class="my-2">Radiation Specialist Oncologist | <span
+                                                                        class="text-primary">20 Years Experience</span>
+                                                                </p>
+                                                                <p class="text-muted"><i
+                                                                        class='bx bx-certification'></i> MBBS, MD
+                                                                    (Radiotherapy), DNB (Radiotherapy), Med. Onco.,
+                                                                    FUICC, FNDM, FUICC</p>
+
+                                                                <p class="text-start">
+                                                                    <a href="#"
+                                                                        class="btn btn-outline-default shadow-none text-start"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#staff1" aria-expanded="false"
+                                                                        aria-controls="staff1">
+                                                                        About Dr. John Doe
+                                                                    </a>
+                                                                </p>
+                                                                <div class="collapse" id="staff1">
+                                                                    <ul>
+                                                                        <li class=" text-muted fw-normal">Dr. John Doe
+                                                                            is a Radiation Specialist Oncologist with 30
+                                                                            Years of Experience. He is affiliated with
+                                                                            Mt. Meru Refferal Regional Hospital in
+                                                                            Arusha. Dr. John Doe holds MBBS, MD
+                                                                            (Radiotherapy), DNB (Radiotherapy), Med.
+                                                                            Onco., FUICC, FNDM, FUICC. He can treat a
+                                                                            wide range of Radiation Oncology conditions
+                                                                            like Bladder Cancer, Brain Tumor,
+                                                                            Chondrosarcoma, Colon Cancer, Esophageal
+                                                                            Cancer, and more . He speaks English, Hindi,
+                                                                            Telugu, Hindi, Telugu.</li>
+                                                                        <li class=" text-muted fw-normal">Dr. John Doe
+                                                                            has over 30 years of experience as a
+                                                                            Radiation Specialist Oncologist at Mt. Meru
+                                                                            Refferal Regional Hospital.</li>
+                                                                    </ul>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-3 my-2">
+                                                            <a class="rounded-pill btn btn-primary w-100 my-2 p-2 d-flex justify-content-center align-items-center shadow-none"
+                                                                href="booking-step02.html" target="_blank"> BOOK
+                                                                APPOINTMENT</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="card my-3">
+                                                    <div class="row">
+                                                        <div class="col-md-2 my-2 text-center">
+                                                            <img class="profile" src="assets/images/sm.jpg" alt=""
+                                                                style="max-width: 100%;">
+                                                        </div>
+                                                        <div class="col-md-7 my-2">
+                                                            <h3 class="text-dark">Dr. John Smith
+                                                                <p class="my-2">Paediatric Orthopedic | <span
+                                                                        class="text-primary">6 Years Experience</span>
+                                                                </p>
+                                                                <p class="text-muted"><i
+                                                                        class='bx bx-certification'></i> MBBS, MD
+                                                                    (Radiotherapy), DNB (Radiotherapy), Med. Onco.,
+                                                                    FUICC, FNDM, FUICC</p>
+
+                                                                <p class="text-start">
+                                                                    <a href="#"
+                                                                        class="btn btn-outline-default shadow-none text-start"
+                                                                        data-bs-toggle="collapse"
+                                                                        data-bs-target="#staff2" aria-expanded="false"
+                                                                        aria-controls="staff2">
+                                                                        About Dr. John Smith
+                                                                    </a>
+                                                                </p>
+                                                                <div class="collapse" id="staff2">
+                                                                    <ul>
+                                                                        <li class=" text-muted fw-normal">Dr. John Doe
+                                                                            is a Radiation Specialist Oncologist with 30
+                                                                            Years of Experience. He is affiliated with
+                                                                            Mt. Meru Refferal Regional Hospital in
+                                                                            Arusha. Dr. John Doe holds MBBS, MD
+                                                                            (Radiotherapy), DNB (Radiotherapy), Med.
+                                                                            Onco., FUICC, FNDM, FUICC. He can treat a
+                                                                            wide range of Radiation Oncology conditions
+                                                                            like Bladder Cancer, Brain Tumor,
+                                                                            Chondrosarcoma, Colon Cancer, Esophageal
+                                                                            Cancer, and more . He speaks English, Hindi,
+                                                                            Telugu, Hindi, Telugu.</li>
+                                                                        <li class=" text-muted fw-normal">Dr. John Doe
+                                                                            has over 30 years of experience as a
+                                                                            Radiation Specialist Oncologist at Mt. Meru
+                                                                            Refferal Regional Hospital.</li>
+                                                                    </ul>
+                                                                </div>
+                                                        </div>
+                                                        <div class="col-md-3 my-2">
+                                                            <a class="rounded-pill btn btn-warning w-100 my-2 p-2 d-flex justify-content-center align-items-center shadow-none"
+                                                                href="booking-step02.html" target="_blank"> REQUEST
+                                                                APPOINTMENT</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Gallery -->
+                        <div class="card card-body border-0 rounded-0" id="gallery">
+                            <h3 class="w-50 py-2"
+                                style="border-bottom: 3px solid;border-image: linear-gradient(to right,  #2981B3 35%, transparent 35%) 100% 1;">
+                                Media Gallery</h3>
+                            <p>Some placeholder content for the collapse component. This panel is hidden by default but
+                                revealed when the user activates the relevant trigger.</p>
+                            <div class="row my-2 image-gallery">
+                                <div class="col-md-4 my-2">
+                                    <img src="../../assets/images/room.jpg" alt="">
+                                </div>
+                                <div class="col-md-4 my-2">
+                                    <img src="../../assets/images/lab1.webp" alt="">
+                                </div>
+                                <div class="col-md-4 my-2">
+                                    <img src="../../assets/images/images.jpeg" alt="">
+                                </div>
+                                <div class="col-md-4 my-2">
+                                    <img src="../../assets/images/lab1.webp" alt="">
+                                </div>
+                                <div class="col-md-4 my-2">
+                                    <img src="../../assets/images/img1.jpg" alt="">
+                                </div>
+                                <div class="col-md-4 my-2">
+                                    <img src="../../assets/images/lab1.webp" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-4">
+        <div class="top py-3">
+            <div class="row m-0 px-4 py-2">
+                <div class="col-md-3 text-center">
+                    <h4 class="text-center text-white mb-2">Map</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.935269919377!2d36.69213557407986!3d-3.3659991414341404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371c8028b8ecad%3A0xddc916a89246d8ad!2sMount%20Meru%20Regional%20Referral%20Hospital!5e0!3m2!1sen!2stz!4v1723620861007!5m2!1sen!2stz"
+                        style="max-width: 100%;height: auto;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-3 bg-none">
+                    <h4 class="text-center text-white">Quicklinks</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-link text-light me-2'> </i> <a href="www.nhif.go.tz" target="_blank">Bima
+                                ya Afya</a></li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-link text-light me-2'> </i> <a href="https://www.moh.go.tz/"
+                                target="_blank">Wizara ya Afya</a></li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-link text-light me-2'> </i> <a href="http://www.tamisemi.go.tz/"
+                                target="_blank">Ofisi ya Rais - TAMISEMI</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center text-white">Address</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bxs-location-plus me-2 text-light'> </i> Arusha</li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx bx-envelope me-2 text-light'> </i>P.O.Box 3092, Arusha</li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-phone-call me-2 text-light'> </i> 250-335751-2</li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-envelope me-2 text-light'> </i> mt.merurrh@afya.go.tz</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center text-white">CME</h4>
+                    <video class="w-100" autoplay loop muted>
+                        <source src=".." type="video/mp4" class="object-fit-cover" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini d-flex justify-content-center align-items-center text-white border-0">
+            <p class="text-light p-0" style="font-size: 14px;">Copyright ©2023 Mount Meru Regional Referal . All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../../assets/js/bootstrap.min.js"></script>
+    <script>
+        // new DataTable('#staffs');
+
+        // sidebar
+        var menuIcon = document.getElementById("check");
+        menuIcon.addEventListener('change', function () {
+
+            var sideMenu = document.querySelector(".sidebar");
+            var title = document.querySelectorAll(".title");
+
+            if (menuIcon.checked) {
+                sideMenu.style.width = "280px";
+                sideMenu.style.transition = "0.5s";
+                sideMenu.style.transitionProperty = "left";
+                title.forEach(con => {
+                    con.style.display = "block";
+                });
+            } else {
+                title.forEach(con => {
+                    con.style.display = "none";
+                });
+                sideMenu.style.width = "75px";
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/ico" href="assets/images/logo_mt_meru.png">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="assets/js/javascript.js"></script>
+    <link rel="stylesheet" href="assets/css/bs_stepper.css" />
+
+</head>
+<!-- HEADER -->
+<header class="sticky-top bg-white">
+    <div class="menu shadow">
+        <nav class="navbar navbar-light w-100">
+            <div class="container-fluid">
+                <a class="navbar-brand">MRRH</a>
+                <div class="d-flex">
+                    <a href="booking.html" class="btn text-capitalize fw-bold shadow-none">Home</a>
+                    <div class="dropdown">
+                        <a class="btn dropdown-toggle text-capitalize shadow-none" href="#" role="button"
+                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dr Apollo Snow
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-start" aria-labelledby="dropdownMenuLink">
+                            <li class="text-center w-100">My Profile</li>
+                            <hr>
+                            <li class="text-center w-100"><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class=" row accordion shadow" id="accordionExample">
+            <!-- Nav bar -->
+            <div class="col-md-3 border">
+                <button class="accordion-button border-bottom" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#dashboard" aria-expanded="true" aria-controls="dashboard">
+                    <i class='bx bxs-dashboard me-2 fs-3'></i>
+                    Dashboard
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#profile" aria-expanded="false" aria-controls="profile">
+                    <i class='bx bx-book-reader me-2 fs-3'></i>
+                    My Profile
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#attachment" aria-expanded="false" aria-controls="attachment">
+                    <i class='bx bxs-file-pdf me-2 fs-3'></i>
+                    Attachments
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#mySelection" aria-expanded="false" aria-controls="mySelection">
+                    <i class='bx bx-briefcase me-2 fs-3'></i>
+                    My Application
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#settings" aria-expanded="false" aria-controls="settings">
+                    <i class='bx bx-cog me-2 fs-3'></i>
+                    Change password
+                </button>
+                <button class="accordion-button collapsed border-bottom" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#logout" aria-expanded="false" aria-controls="logout">
+                    <i class='bx bx-log-out me-2 fs-3'></i>
+                    Logout
+                </button>
+            </div>
+
+            <!-- Content(Pages) -->
+            <div class="col-md-9 p-2" style="background: #efefef;">
+                <div id="dashboard" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-white">
+                        <h2>Positions by category</h2>
+                        <hr>
+                        <div class="row d-flex justify-content-around my-2">
+                            <button class="col-md-3 rounded text-center p-2 m-2 shadow btn btn-default"
+                                style="border: 2px dotted #2981B3">
+                                <i class="bx bx-desktop me-2"></i>Development & IT
+                            </button>
+                            <button class="col-md-3 rounded text-center p-2 m-2 shadow btn btn-default"
+                                style="border: 2px dotted #2981B3">
+                                <i class="bx bx-line-chart me-2"></i>Sales & Marketing
+                            </button>
+                            <button class="col-md-3 rounded text-center p-2 m-2 shadow btn btn-default"
+                                style="border: 2px dotted #2981B3">
+                                <i class="bx bx-first-aid me-2"></i> Health & Medicine
+                            </button>
+                            <button class="col-md-3 rounded text-center p-2 m-2 shadow btn btn-default"
+                                style="border: 2px dotted #2981B3">
+                                <i class="bx bx-bank me-2"></i>Finance & Accounting
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="profile" class="accordion-collapse collapse bg-white" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body bg-white">
+                        <div class="row d-flex justify-content-between">
+                            <div class="col-md-3">
+                                <h2>Personal details</h2>
+                            </div>
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#updateProfile">
+                                    Edit profile
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 p-1">
+                                <div class="card border rounded p-2">
+                                    <h3>John Smith Snow</h3>
+                                    <p class="my-2">Fullname: <span class="text-muted">John Smith Snow</span></p>
+                                    <p class="my-2">Reg No: <span class="text-muted">T20-920-22292</span></p>
+                                    <p class="my-2">Gender: <span class="text-muted">M</span></p>
+                                    <p class="my-2">Mobile: <span class="text-muted">+255782637489</span></p>
+                                    <p class="my-2">Email: <span class="text-muted">+example@example.com</span></p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-7 p-1">
+                                <div class="card border rounded bg-white p-2">
+                                    <h3>Academic Information</h3>
+                                    <div class="my-2">
+                                        College:
+                                        <div class="">
+                                            <h3>CIVE</h3>
+                                            <p class="text-muted">College of Informatics and Virtual Education</p>
+                                        </div>
+                                    </div>
+                                    <div class="my-2">
+                                        Department:
+                                        <div class="">
+                                            <h3>Health and Science</h3>
+                                            <p class="text-muted">College of Informatics and Virtual Education</p>
+                                        </div>
+                                    </div>
+                                    <div class="my-2">
+                                        Program:
+                                        <div class="">
+                                            <h3>Bsc. HIS</h3>
+                                            <p class="text-muted">Bachelor of Science in Health Information System
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal fade" id="updateProfile" tabindex="-1" aria-labelledby="updateProfileLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="updateProfileLabel">Update my profile</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <h3>Personal Details</h3>
+                                        <div class="row my-2 border-top">
+                                            <div class="col-md-4 my-2">
+                                                <label for="fname">First Name</label>
+                                                <input type="text" name="fname" id="fname" class="form-control"
+                                                    required>
+                                            </div>
+                                            <div class="col-md-4 my-2">
+                                                <label for="mname">Middle Name</label>
+                                                <input type="text" name="mname" id="mname" class="form-control"
+                                                    required>
+                                            </div>
+                                            <div class="col-md-4 my-2">
+                                                <label for="lname">Surname</label>
+                                                <input type="text" name="lname" id="lname" class="form-control"
+                                                    required>
+                                            </div>
+
+                                            <div class="col-md-2 my-2">
+                                                <label for="gender">Gender</label>
+                                                <select class="form-select" name="sex">
+                                                    <option value="male">Male</option>
+                                                    <option value="female">Female</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="col-md-4 my-2">
+                                                <label for="phone">Mobile</label>
+                                                <input type="text" name="phone" id="phone" class="form-control"
+                                                    required>
+                                            </div>
+
+                                            <div class="col-md-4 my-2">
+                                                <label for="email">Email</label>
+                                                <input type="email" name="email" id="email" class="form-control"
+                                                    required>
+                                            </div>
+                                        </div>
+
+                                        <h3 class="mt-2">Academic Information</h3>
+                                        <div class="row my-2 border-top">
+                                            <div class="col-md-7 my-2">
+                                                <label for="reg_no">Institute name</label>
+                                                <input type="text" name="reg_no" id="reg_no" class="form-control"
+                                                    required>
+                                            </div>
+
+                                            <div class="col-md-5 my-2">
+                                                <label for="program">Programme</label>
+                                                <input type="text" name="program" id="program" class="form-control"
+                                                    required>
+                                            </div>
+
+                                            <div class="col-md-4 my-2">
+                                                <label for="reg_no">Reg No</label>
+                                                <input type="text" name="reg_no" id="reg_no" class="form-control"
+                                                    required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mySelection" class="accordion-collapse collapse bg-white" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>My Selection</h2>
+                        <button class="btn btn-info float-end m-2" data-bs-toggle="modal"
+                            data-bs-target="#attachmentModal"><i class="bx bx-file text-white mx-1"></i>Attach
+                            letter</button>
+                        <button class="btn btn-primary float-end m-2" data-bs-toggle="modal"
+                            data-bs-target="#selectionPosts"><i class="bx bx-plus-circle text-white mx-1"></i>Click to
+                            select </button>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Status</th>
+                                    <th>View</th>
+                                    <th>Position</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Received</td>
+                                    <td><a href="#">Download</a></td>
+                                    <td>PROGRAMMER</td>
+                                    <td class="d-flex justify-content-center">
+                                        <button type="button" class="btn btn-sm btn-info mx-1">Apply now</button>
+                                        <button type="button" class="btn btn-sm btn-success mx-1"><i
+                                                class="bx text-white bx-edit"></i></button>
+                                        <button type="button" class="btn btn-sm btn-danger mx-1"><i
+                                                class="bx text-white bx-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="attachment" class="accordion-collapse collapse bg-white" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h3>Attachments</h3>
+                        <button class="btn btn-primary float-end my-2" data-bs-toggle="modal"
+                            data-bs-target="#attachmentModal"><i class="bx bx-plus-circle text-white mx-1"></i>Add
+                        </button>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+
+                                    <th>Attachment</th>
+                                    <th>View</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Recieved</td>
+                                    <td><button class="btn btn-sm btn-primary">View</button></td>
+                                    <td class="justify-content-center">
+                                        <button type="button" class="btn btn-sm btn-success"><i
+                                                class="bx text-white bx-edit"></i></button>
+                                        <button type="button" class="btn btn-sm btn-danger"><i
+                                                class="bx text-white bx-trash"></i></button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="settings" class="accordion-collapse collapse bg-white" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <h2>Change password</h2>
+                        <form>
+                            <div class="my-2">
+                                <label for="oldPassword">Old Password</label>
+                                <input type="password" name="old_pass" class="form-control" id="oldPassword" required>
+                            </div>
+                            <div class="my-2">
+                                <label for="newPassword">New Password</label>
+                                <input type="password" name="new_pass" class="form-control" id="newPassword" required>
+                            </div>
+                            <div class="my-2">
+                                <label for="confirmPassword" class="form-label">Confirm New Password</label>
+                                <input type="password" name="confirm_pass" class="form-control" id="confirmPassword"
+                                    required>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Change Password</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Attachment -->
+                <div class="modal fade" id="attachmentModal" tabindex="-1" aria-labelledby="successMsgLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="attachmentModalLabel">Select Attachment Type</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="attachmentForm">
+                                    <!-- Select Attachment Type -->
+                                    <div class="mb-3">
+                                        <label for="attachmentType" class="form-label">Attachment Type</label>
+                                        <select class="form-select" id="attachmentType" required>
+                                            <option value="" disabled selected>Select attachment type</option>
+                                            <option value="application_letter">Application Letter</option>
+                                            <option value="birth_certificate">Birth Certificate</option>
+                                            <option value="cv">Curriculum Vitae</option>
+                                        </select>
+                                    </div>
+                                    <!-- File Input -->
+                                    <div class="mb-3">
+                                        <label for="attachmentFile" class="form-label">Attach File</label>
+                                        <input type="file" class="form-control" id="attachmentFile" required>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary" form="attachmentForm">Attach File</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="selectionPosts" data-bs-backdrop="static" tabindex="-1" aria-labelledby="bookByClinicLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header text-white" style="background: #2981B3;">
+                                <h5 class="modal-title">Place an application</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="stepper" id="stepper">
+                                    <div class="steps-container">
+                                        <div class="steps">
+                                            <div class="step text-primary" id="1">
+                                                <div class="step-title">
+                                                    <span class="step-number">01</span>
+                                                    <div class="step-text">Select Category</div>
+                                                </div>
+                                            </div>
+                                            <div class="step text-primary" icon="fa fa-info-circle" id="2">
+                                                <div class="step-title">
+                                                    <span class="step-number">02</span>
+                                                    <div class="step-text">Select Position</div>
+                                                </div>
+                                            </div>
+                                            <div class="step text-primary" icon="fa fa-info-circle" id="3">
+                                                <div class="step-title">
+                                                    <span class="step-number">03</span>
+                                                    <div class="step-text">Attachment</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="stepper-content-container border rounded mt-3">
+                                        <form class="w-100">
+                                            <!-- Select Category -->
+                                            <div class="stepper-content fade-in" stepper-label="1">
+                                                <div class="row d-flex justify-content-around my-2">
+                                                    <input type="radio" name="category" id="category_1"
+                                                        class="btn-check" value="category">
+                                                    <label for="category_1"
+                                                        class="col-md-3 rounded text-center p-2 m-2 shadow btn btn-outline-secondary"
+                                                        style="border: 2px dotted #2981B3">
+                                                        <i class="bx bx-desktop me-2"></i>Development & IT
+                                                        <p class=""><i class="bx bx-user me-2"></i>20 Posts
+                                                        </p>
+                                                    </label>
+                                                    <input type="radio" name="category" id="category_2"
+                                                        class="btn-check" value="category">
+                                                    <label for="category_2"
+                                                        class="col-md-3 rounded text-center p-2 m-2 shadow btn btn-outline-secondary"
+                                                        style="border: 2px dotted #2981B3">
+                                                        <i class="bx bx-line-chart me-2"></i>Sales & Marketing
+                                                        <p class=""><i class="bx bx-user me-2"></i>20 Posts
+                                                        </p>
+                                                    </label>
+                                                    <input type="radio" name="category" id="category_3"
+                                                        class="btn-check" value="category">
+                                                    <label for="category_3"
+                                                        class="col-md-3 rounded text-center p-2 m-2 shadow btn btn-outline-secondary"
+                                                        style="border: 2px dotted #2981B3">
+                                                        <i class="bx bx-first-aid me-2"></i> Health & Medicine
+                                                        <p class=""><i class="bx bx-user me-2"></i>5 Posts</p>
+                                                    </label>
+                                                    <input type="radio" name="category" id="category_4"
+                                                        class="btn-check" value="category">
+                                                    <label for="category_4"
+                                                        class="col-md-3 rounded text-center p-2 m-2 shadow btn btn-outline-secondary"
+                                                        style="border: 2px dotted #2981B3">
+                                                        <i class="bx bx-bank me-2"></i>Finance & Accounting
+                                                        <p class="text-muted"><i class="bx bx-user me-2"></i>20 Posts
+                                                        </p>
+                                                    </label>
+                                                </div>
+                                                <button class="btn btn-outline-primary float-end rounded my-3"type="button" onclick="stepper.navigate('2')">
+                                                    <i class="bx bxs-right-arrow-alt"></i>Next
+                                                </button>
+                                            </div>
+
+                                            <!-- Select Position -->
+                                            <div class="stepper-content fade-in" stepper-label="2">
+                                                <h5 class="text-center">Select Position</h5>
+                                                <div class="row p-2">
+                                                    <table class="table table-bordered w-100">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Category</th>
+                                                                <th>Position</th>
+                                                                <th>Capacity</th>
+                                                                <th>Select</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Development & IT</td>
+                                                                <td>System Administrator</td>
+                                                                <td>20</td>
+                                                                <td>
+                                                                    <input type="radio" name="position" id="position"
+                                                                        class="btn-check" value="position">
+                                                                    <label for="position"
+                                                                        class="rounded text-center btn btn-outline-primary"
+                                                                        style="border: 2px dotted #2981B3">Select</label>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <button class="btn btn-outline-primary my-3 float-start" type="button" onclick="stepper.navigate('1')">Previous</button>
+                                                <button class="btn btn-outline-primary my-3 float-end" type="button"onclick="stepper.navigate('3')">Next</button>
+                                            </div>
+
+                                            <!-- Attachment -->
+                                            <div class="stepper-content fade-in" stepper-label="3">
+                                                <h5 class="text-center">Attachment</h5>
+                                                <div class="row p-2">
+                                                    <div class="mb-3">
+                                                        <label for="attachmentFile" class="form-label">Attach Letter</label>
+                                                        <input type="file" class="form-control" id="attachmentFile" required>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-outline-primary my-3 float-start" type="button" onclick="stepper.navigate('2')">Previous</button>
+                                                <button class="btn btn-outline-primary my-3 float-end" type="button">Save</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-4">
+        <div class="top py-3">
+            <div class="row m-0 px-4 py-2">
+                <div class="col-md-3 text-center">
+                    <h4 class="text-center text-white mb-2">Map</h4>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.935269919377!2d36.69213557407986!3d-3.3659991414341404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18371c8028b8ecad%3A0xddc916a89246d8ad!2sMount%20Meru%20Regional%20Referral%20Hospital!5e0!3m2!1sen!2stz!4v1723620861007!5m2!1sen!2stz"
+                        style="max-width: 100%;height: auto;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-3 bg-none">
+                    <h4 class="text-center text-white">Quicklinks</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-link text-light me-2'> </i> <a href="www.nhif.go.tz" target="_blank">Bima
+                                ya Afya</a></li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-link text-light me-2'> </i> <a href="https://www.moh.go.tz/"
+                                target="_blank">Wizara ya Afya</a></li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-link text-light me-2'> </i> <a href="http://www.tamisemi.go.tz/"
+                                target="_blank">Ofisi ya Rais - TAMISEMI</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center text-white">Address</h4>
+                    <ul class="list-group">
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bxs-location-plus me-2 text-light'> </i> Arusha</li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx bx-envelope me-2 text-light'> </i>P.O.Box 3092, Arusha</li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-phone-call me-2 text-light'> </i> 250-335751-2</li>
+                        <li class="list-group-item border-0 d-flex align-items-center justify-content-center"><i
+                                class='bx bx-envelope me-2 text-light'> </i> mt.merurrh@afya.go.tz</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="text-center text-white">CME</h4>
+                    <video class="w-100" autoplay loop muted>
+                        <source src="../../../../Laravel From Scratch 2022 4+ Hour Course.mp4" type="video/mp4"
+                            class="object-fit-cover" />
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="mini d-flex justify-content-center align-items-center text-white border-0">
+            <p class="text-light p-0" style="font-size: 14px;">Copyright ©2023 Mount Meru Regional Referal . All rights
+                reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cdbootstrap/js/cdb.min.js"></script>
+    <script>
+        const stepperElement = document.querySelector("#stepper");
+        const stepper = new CDB.Stepper(stepperElement);
+
+    </script>
+    <script>
+        // sidebar
+        var menuIcon = document.getElementById("check");
+        menuIcon.addEventListener('change', function () {
+
+            var sideMenu = document.querySelector(".sidebar");
+            var title = document.querySelectorAll(".title");
+
+            if (menuIcon.checked) {
+                sideMenu.style.width = "280px";
+                sideMenu.style.transition = "0.5s";
+                sideMenu.style.transitionProperty = "left";
+                title.forEach(con => {
+                    con.style.display = "block";
+                });
+            } else {
+                title.forEach(con => {
+                    con.style.display = "none";
+                });
+                sideMenu.style.width = "75px";
+            }
+        });
+
+        // Show form based on selection
+        document.getElementById('formSelect').addEventListener('change', function () {
+            const selectedForm = this.value;
+            document.querySelectorAll('.form-container').forEach(form => {
+                form.style.display = 'none'; // Hide all forms
+            });
+            if (selectedForm) {
+                document.getElementById(selectedForm).style.display = 'block'; // Show selected form
+            }
+        });
+    </script>
+</body>
+
+</html>
